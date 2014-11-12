@@ -5,23 +5,25 @@
 		_div = document.createElement("div");
 		_div.className="test";
 		_div.innerHTML += "<img src=\"test.gif\">";
-		a.appendChild(_div);
+		
 	};
 
 	a.onclick = function reflowA(){
+		a.appendChild(_div);
 	var animate = setInterval(function(){
 		a.style.left = a.offsetLeft + 30 + 'px';
 		if(a.offsetLeft >= 800){
 			clearInterval(animate);
 		}
-	},100);	
+	},300);	
 }
 	b.onclick = function reflowB(){
+		b.appendChild(_div);
 	var animate = setInterval(function(){
-		b.style.left = b.offsetLeft + 30 + 'px';
+		b.style.marginLeft = b.offsetLeft + 30 + 'px';
 		if(b.offsetLeft >= 800){
 			clearInterval(animate);
 		}
-	},100);	
+	},300);	
 }
 }())
