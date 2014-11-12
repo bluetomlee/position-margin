@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reflow</title>
+	<style>
+	#test1,#test2{position:absolute;width:300px;height:100px;margin-bottom:10px;}
+	#test1{left: 0px;background-color:blue;}
+	#test2{left: 320px;background-color:black;}
+	</style>
+</head>
+<body>
+	<div id="test1"></div>
+	<div id="test2"></div>
+</body>
+<script type="text/javascript" src="1.js"></script>
+</html>
